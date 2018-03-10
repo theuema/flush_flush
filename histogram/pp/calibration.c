@@ -172,7 +172,11 @@ int main(int argc, char** argv)
   size_t miss_min_i = 0;
   for (size_t i = 0; i < 300; ++i)
   {
-    printf("%4zu: %10zu %10zu\n",5*i,hit_histogram[i],miss_histogram[i]);
+    FILE *fc = fopen("logs/calibration_hist_pp", "ab+");
+    assert(fc != NULL);
+    fprintf(fc, "%3d: %10zu %10zu\n",i*5,hit_histogram[i],miss_histogram[i]);
+    fclose(fc);
+    //printf("%4zu: %10zu %10zu\n",5*i,hit_histogram[i],miss_histogram[i]);
   }
   return 0;
 }
