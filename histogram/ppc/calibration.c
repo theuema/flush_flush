@@ -181,7 +181,7 @@ int main(int argc, char** argv)
   {
     FILE *fc = fopen("logs/calibration_hist_ppc", "ab+");
     assert(fc != NULL);
-    fprintf(fc, "%3d: %10zu %10zu\n",i*5,hit_histogram[i],miss_histogram[i]);
+    fprintf(fc, "%4zu: %10zu %10zu\n",i*5,hit_histogram[i],miss_histogram[i]);
     fclose(fc);
     //printf("%4zu: %10zu %10zu\n",5*i,hit_histogram[i],miss_histogram[i]);
   }
