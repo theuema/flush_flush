@@ -31,9 +31,11 @@ size_t flushandreload(size_t* addr)
 
 int main(int argc, char** argv)
 {
+  printf("start\n");
   memset(array,-1,5*1024*sizeof(size_t));
   maccess(array + 2*1024);
   sched_yield();
+  printf("onlyreload now\n");
   for (int i = 0; i < 1*1024*1024; ++i)
   {
     size_t d = onlyreload(array+2*1024);
@@ -42,6 +44,7 @@ int main(int argc, char** argv)
       sched_yield();
   }
   flush(array+1024);
+  printf("flushandreload now\n");
   for (int i = 0; i < 1*1024*1024; ++i)
   {
     size_t d = flushandreload(array+2*1024);
