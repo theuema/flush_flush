@@ -54,7 +54,11 @@ int main(int argc, char** argv)
   size_t miss_min_i = 0;
   for (size_t i = 0; i < 600; ++i)
   {
-    printf("%3zu: %10zu %10zu\n",i,hit_histogram[i],miss_histogram[i]);
+    FILE *fc = fopen("logs/calibration_hist_ff", "ab+");
+    assert(fc != NULL);
+    fprintf(fc, "%3zu: %10zu %10zu\n",i,hit_histogram[i],miss_histogram[i]);
+    fclose(fc);
+    //printf("%3zu: %10zu %10zu\n",i,hit_histogram[i],miss_histogram[i]);
   }
   return 0;
 }
