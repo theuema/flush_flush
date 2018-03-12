@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <assert.h>
 #include <string.h>
 #include <sched.h>
 #include "../cacheutils.h"
