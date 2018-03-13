@@ -1,3 +1,6 @@
-all: calibration
+all: calibration rdtsc
 calibration: calibration.c ../cacheutils.h
+	gcc -std=gnu11 -O3 -o $@ $@.c
+
+rdtsc: rdtsc.c
 	gcc -std=gnu11 -O3 -o $@ $@.c
