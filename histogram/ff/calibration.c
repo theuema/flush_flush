@@ -34,7 +34,7 @@ int main(int argc, char** argv)
   maccess(array + 2*1024);
   sched_yield();
   printf("onlyreload now\n");
-  for (int i = 0; i < 1*1024*1024; ++i)
+  for (int i = 0; i < 1*10*1024; ++i)
   {
     size_t d = onlyreload(array+2*1024);
     hit_histogram[MIN(599,d)]++;
@@ -43,7 +43,7 @@ int main(int argc, char** argv)
   }
   flush(array+1024);
   printf("flushandreload now\n");
-  for (int i = 0; i < 1*1024*1024; ++i)
+  for (int i = 0; i < 1*10*1024; ++i)
   {
     size_t d = flushandreload(array+2*1024);
     miss_histogram[MIN(599,d)]++;
