@@ -45,6 +45,9 @@ int main(int argc, char** argv)
 {
   printf("start\n");
   memset(array,-1,128*1024*sizeof(size_t));
+  printf("vguestaddr: %zx", array);
+  flush(array);
+
   FILE *fc = fopen("logs/rdtsc_test_user", "ab+");
   assert(fc != NULL);
   fprintf(fc, "\n");
