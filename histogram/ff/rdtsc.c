@@ -45,12 +45,20 @@ int main(int argc, char** argv)
 {
   printf("start\n");
   memset(array,-1,128*1024*sizeof(size_t));
-  printf("-----------> generate misses..\n");
+  FILE *fc = fopen("logs/rdtsc_test_user", "ab+");
+  assert(fc != NULL);
+  fprintf(fc, "\n");
+  fprintf(fc, "-----------> generate misses..\n");
+  fclose(fc);
   for (int i = 0; i < 10; ++i)
   {
     dosomertdscmiss(array);
   }
-  printf("-----------> generate hits..\n");
+  fc = fopen("logs/rdtsc_test_user", "ab+");
+  assert(fc != NULL);
+  fprintf(fc, "\n");
+  fprintf(fc, "-----------> generate hits..\n");
+  fclose(fc);
   for (int i = 0; i < 10; ++i)
   {
     dosomertdscnmiss(array);
