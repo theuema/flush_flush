@@ -31,9 +31,9 @@ void dosomertdscmiss(size_t* p)
   fprintf(fc, "rdtsc: %llu\n",time);
   fprintf(fc, "perform cache miss..\n");
 
+  flush(p);
   time = rdtsc();
   // generate miss w flush
-  flush(p);
   maccess(p);
   size_t delta = rdtsc() - time;
 
