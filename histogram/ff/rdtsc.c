@@ -7,20 +7,37 @@
 
 size_t array[128*1024];
 
-void dosomertdsc(void)
+void dosomertdscnmiss(size_t* p)
 {
-  size_t time = rdtsc();
-  FILE *fc = fopen("logs/rdtsc_test", "ab+");
+  size_t time;
+  FILE *fc = fopen("logs/rdtsc_test_user", "ab+");
   assert(fc != NULL);
-  fprintf(fc, "rdtsc: %10zu\n",time);
-  fprintf(fc, "array stuff..\n");
+  fprintf(fc, "rdtsc: %llu\n",time);
+  fprintf(fc, "perform cache hit..\n");
+
   time = rdtsc();
-  for (int i = 0; i < 128*1024; ++i)
-  {
-    size_t read = array[i];
-  }
+  maccess(p);
   size_t delta = rdtsc() - time;
-  fprintf(fc, "delta (rdtsc() - time): %10zu\n",delta);
+
+  fprintf(fc, "delta (rdtsc() - time): %llu\n",delta);
+  fclose(fc);
+}
+
+void dosomertdscmiss(size_t* p)
+{
+  size_t time;
+  FILE *fc = fopen("logs/rdtsc_test_user", "ab+");
+  assert(fc != NULL);
+  fprintf(fc, "rdtsc: %llu\n",time);
+  fprintf(fc, "perform cache miss..\n");
+
+  time = rdtsc();
+  // generate miss w flush
+  flush(p);
+  maccess(p);
+  size_t delta = rdtsc() - time;
+
+  fprintf(fc, "delta (rdtsc() - time): %llu\n",delta);
   fclose(fc);
 }
 
@@ -28,10 +45,23 @@ int main(int argc, char** argv)
 {
   printf("start\n");
   memset(array,-1,128*1024*sizeof(size_t));
-  for (int i = 0; i < 20; ++i)
+  FILE *fc = fopen("logs/rdtsc_test_user", "ab+");
+  assert(fc != NULL);
+  fprintf(fc, "\n");
+  fprintf(fc, "-----------> generate misses..\n");
+  fclose(fc);
+  for (int i = 0; i < 10; ++i)
   {
-    dosomertdsc();
-    printf("%d", i);
+    dosomertdscmiss(array);
+  }
+  fc = fopen("logs/rdtsc_test_user", "ab+");
+  assert(fc != NULL);
+  fprintf(fc, "\n");
+  fprintf(fc, "-----------> generate hits..\n");
+  fclose(fc);
+  for (int i = 0; i < 10; ++i)
+  {
+    dosomertdscnmiss(array);
   }
   printf(".\n");
 
