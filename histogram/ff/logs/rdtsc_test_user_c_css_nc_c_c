@@ -1,0 +1,320 @@
+
+-----------> generate misses..
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 161
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 110
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 132
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 202
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 202
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 148
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 364
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 138
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 124
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 125
+
+-----------> generate hits..
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 98
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 96
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 125
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 161
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 148
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 98
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 79
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 79
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 79
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 85
+
+-----------> generate misses..
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 573
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 124
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 232
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 108
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 110
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 106
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 123
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 131
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 176
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 98
+
+-----------> generate hits..
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 106
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 145360
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 112
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 106
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 108
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 117
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 108
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 318
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 96
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 103
+
+-----------> generate misses..
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 508
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 306
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 150
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 135
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 112
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 110
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 136
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 171
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 212
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 229
+
+-----------> generate hits..
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 100
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 163
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 290
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 420
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 118
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 125
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 118
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 106
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 106
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 106
+
+-----------> generate misses..
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 279
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 419
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 115
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 142
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 116
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 151
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 210
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 179
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 125
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 421
+
+-----------> generate hits..
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 113
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 104
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 94
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 96
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 152
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 112
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 103
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 112
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 112
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 203
+
+-----------> generate misses..
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 273
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 98
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 352
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 177
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 164
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 145
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 252
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 121
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 209
+rdtsc: 0
+perform cache miss..
+delta (rdtsc() - time): 136
+
+-----------> generate hits..
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 98
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 118
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 96
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 98
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 87
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 92
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 96
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 92
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 85
+rdtsc: 0
+perform cache hit..
+delta (rdtsc() - time): 167
